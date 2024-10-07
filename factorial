@@ -1,0 +1,22 @@
+3 start input:4 result:1 
+
+start:4 input zero stop 
+7 input result
+outerlp:4 input one stop
+2 input one input
+7 input count
+7 result temp
+
+inlp:4 count one outerlp
+1 result temp result
+2 count one count
+3 inlp
+
+
+
+stop:9
+temp:0
+count:0
+one:1 
+two:2
+zero:0
