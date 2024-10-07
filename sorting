@@ -1,0 +1,32 @@
+3 5 first:83 length:6 
+7 length counter 
+1 first length last 
+7 first x
+ 
+c1:5 one counter jump1
+9 
+
+jump1:1 one x second
+ 
+c2:5 second last jump2
+
+2 counter one counter
+1 x one x 
+3 c1
+jump2:7 x f 
+7 second s
+5 s:0 f:0 swap
+3 incr 
+
+swap:7 x c
+7 x a 
+7 a:0 temp
+7 second b
+7 second d 
+7 b:0 c:0
+7 temp d:0
+
+incr:1 second one second 
+3 c2
+x:0 temp:0 second:0 last:0 counter:0 one:1 
+5 4 6 2 3
