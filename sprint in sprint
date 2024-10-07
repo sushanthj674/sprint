@@ -1,0 +1,126 @@
+1 act_starter ones in_start
+start:7 in_start present
+7 present:0 instruction
+4 instruction jumpin jump
+4 instruction addin add
+4 instruction subin sub
+4 instruction haltin halt
+4 instruction cpyin cpy
+4 instruction ckif_eqin ckif_eq
+4 instruction ckif_lesin ckif_les
+4 instruction inputin input 
+4 instruction constcpyin constcpy 
+3 in_start
+stop:9
+
+
+halt:3 stop
+
+
+jump:1 in_start ones temp
+7 temp j_opt1
+1 act_starter j_opt1:0 temp
+7 temp in_start
+3 start 
+
+add:1 in_start ones a_opt1
+1 a_opt1 ones a_opt2
+1 a_opt2 ones a_opt3
+1 a_opt1:0 a_opt2:0 a_opt3:0
+1 in_start fours in_start
+
+3 start
+
+sub:1 in_start ones s_opt1
+1 s_opt1 ones s_opt2
+1 s_opt2 ones s_opt3
+2 s_opt1:0 s_opt2:0 s_opt3:0
+1 in_start fours in_start
+
+3 start
+
+cpy:1 in_start ones c_opt1
+1 c_opt1 ones c_opt2
+1 c_opt1:0 act_starter c_opt3
+1 c_opt2:0 act_starter c_opt4
+
+7 c_opt3:0 c_opt4:0
+
+1 in_start threes in_start
+3 start
+
+ckif_eq:1 in_start ones eq_opt1
+1 eq_opt1 ones eq_opt2
+1 eq_opt2 ones eq_opt3
+1 eq_opt1:0 act_starter eq_opt4
+1 eq_opt2:0 act_starter eq_opt5
+1 ones eq_opt4 eq_opt4 
+1 ones eq_opt5 eq_opt5 
+1 eq_opt4:0 act_starter eq_opt6
+1 eq_opt5:0 act_starter eq_opt7
+
+4 eq_opt6:0 eq_opt7:0 eq_con
+1 in_start fours in_start
+3 start
+
+eq_con:7 eq_opt3:0 eq_opt8
+1 act_starter eq_opt8 in_start
+3 start
+eq_opt8:0
+
+ckif_les:1 in_start ones les_opt1
+1 les_opt1 ones les_opt2
+1 les_opt2 ones les_opt3
+7 les_opt1:0 les_opt4
+7 les_opt2:0 les_opt5
+1 act_starter les_opt4 les_opt4
+1 act_starter les_opt5 les_opt5
+5 les_opt4:0 les_opt5:0 les_con
+1 in_start fours in_start
+3 start
+
+les_con:7 les_opt3:0 les_opt8
+1 act_starter les_opt8 in_start
+3 start
+les_opt8:0
+
+input:1 in_start ones in_opt1
+1 in_opt1:0 act_starter in_opt3
+6 in_opt3:0
+1 in_start twos in_start
+3 start
+
+constcpy:1 in_start ones ccpy_opt1
+1 ccpy_opt1 ones ccpy_opt2
+7 ccpy_opt1:0 ccpy_opt3
+
+1 ccpy_opt2:0 act_starter ccpy_opt5
+0 ccpy_opt3:0 ccpy_opt5:0
+1 threes in_start in_start
+3 start
+
+
+inputin:6
+constcpyin:0
+temp:0
+jumpin:3
+addin:1
+subin:2
+ckif_eqin:4
+ckif_lesin:5
+cpyin:7
+haltin:9
+zeros:0
+ones:1
+twos:2
+threes:3
+fours:4
+instruction:0
+in_start:0
+act_starter:act_starter
+
+
+
+
+0 1 3 9
+
