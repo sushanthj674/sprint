@@ -1,0 +1,20 @@
+3 7 first_element:35 length:3 
+target:1 result:0 
+
+loop_st:5 length one stop
+7 first_element conditionval
+4 target  conditionval:0 req1
+2 length one length
+1 first_element one first_element
+3 loop_st
+req1:7 one result
+3 stop
+
+
+
+
+
+
+one:1
+stop:9
+4 3 1
