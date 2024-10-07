@@ -1,0 +1,31 @@
+3 5 
+first_element_location:56
+length:4
+7 first_element_location first
+2 length one length
+1 first length last
+
+loop:5 first last content
+stop:9
+
+content:7 first temp1
+7 last temp2
+
+7 temp1:0 swapper
+7 temp1 temp3
+7 temp2 temp4
+7 temp2:0 temp3:0
+7 swapper temp4:0
+
+
+1 first one first
+
+2 last one last 
+3 loop
+
+last:0
+one:1
+swapper:0
+first:0
+
+1 2 3 4 
